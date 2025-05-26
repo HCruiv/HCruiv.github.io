@@ -134,6 +134,12 @@
     <div class="menu">
       <a href="podium1.html">🏆 Podium</a>
     </div>
+    <div class="menu">
+      <a href="podium1.html"> Overview</a>
+    </div>
+    <div class="menu">
+      <a href="podium1.html"> Penilaian</a>
+    </div>
   </header>
 
   <div class="container">
@@ -142,6 +148,16 @@
       <option value="week1">Minggu 1 (28 Apr - 4 Mei)</option>
       <option value="week2">Minggu 2 (5 - 11 Mei)</option>
       <option value="week3">Minggu 3 (12 - 18 Mei)</option>
+      <option value="week4">Minggu 4 (19 - 25 Mei)</option>
+      <option value="week5">Minggu 5 (26 Mei - 1 Juni)</option>
+      <option value="week6">Minggu 6 (12 - 18 Mei)</option>
+      <option value="week7">Minggu 7 (12 - 18 Mei)</option>
+      <option value="week8">Minggu 8 (12 - 18 Mei)</option>
+      <option value="week9">Minggu 9 (12 - 18 Mei)</option>
+      <option value="week10">Minggu 10 (12 - 18 Mei)</option>
+      <option value="week11">Minggu 11 (12 - 18 Mei)</option>
+      <option value="week12">Minggu 12 (12 - 18 Mei)</option>
+      <option value="week13">Minggu 13 (12 - 18 Mei)</option>
       <!-- Tambahkan minggu berikutnya -->
     </select>
 
@@ -181,21 +197,7 @@
       3) Durasi olahraga 150 menit (2j 30m 0s) dalam 1 minggu  
     </div>
 
-    <div class="section-title">📅 Report Activity</div>
-    <div class="table-wrapper">
-      <table id="report-olahraga">
-        <thead>
-          <tr>
-            <th style="width: 20%;">Tanggal</th>
-            <th style="width: 30%;">Nama</th>
-            <th style="width: 25%;">Aktivitas</th>
-            <th style="width: 15%;">Waktu</th>
-            <th style="width: 10%;">Valid</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+    
   </div>
 
   <script>
@@ -223,156 +225,70 @@
           ['Agra Illahi', '1', '0:37:27'],
           ['Redy Erdiyanto', '2', '0:32:55'],
           ['Agus Riyanto', '2', '0:25:58']
-        ],
-        report: [
-          ['28-Apr-2025', 'Redy Erdiyanto', 'Berlari', '0:24:39', false],
-          ['28-Apr-2025', 'Iwa Mohamad W', 'Berlari', '0:17:00', false],
-          ['28-Apr-2025', 'Yahya Djari', 'Berlari', '0:44:47', true],
-          ['29-Apr-2025', 'Diana Suciati', 'Tenis Meja', '9:01:59', true],
-          ['29-Apr-2025', 'Dena Soekarno', 'Gym', '0:44:41', true],
-          ['29-Apr-2025', 'Fitri Rochimah', 'Bersepeda', '0:36:03', true],
-          ['29-Apr-2025', 'Iwa Mohamad W', 'Berjalan', '0:44:12', true],
-          ['29-Apr-2025', 'Junaedi', 'Berjalan', '0:41:33', true],
-          ['29-Apr-2025', 'Rendhie Bihaqqi', 'Berjalan', '0:38:05', true],
-          ['29-Apr-2025', 'Agra Illahi', 'Berlari', '0:37:27', true],
-          ['29-Apr-2025', 'Dhany Aswin', 'Berlari', '0:39:55', true],
-          ['30-Apr-2025', 'Roma Uli', 'Berjalan', '0:44:50', true],
-          ['30-Apr-2025', 'Rita Kusmawati', 'berjalan', '0:45:01', true],
-          ['30-Apr-2025', 'Rudhi Nurhandoyo', 'Berjalan', '0:37:29', true],
-          ['30-Apr-2025', 'Rita Kusmawati', 'Berjalan', '1:54:49', true],
-          ['30-Apr-2025', 'Diana Suciati', 'Gym', '0:58:53', true],
-          ['30-Apr-2025', 'Lia Yuliana', 'Olahraga', '0:08:11', false],
-          ['30-Apr-2025', 'Yahya Djari', 'Berlari', '0:49:00', true],
-          ['30-Apr-2025', 'Lia Yuliana', 'Berjalan', '0:20:39', false],
-          ['30-Apr-2025', 'Diana Suciati', 'Berjalan', '0:01:27', false],
-          ['1-May-2025', 'Iwa Mohamad W', 'Berjalan', '0:40:21', true],
-          ['1-May-2025', 'Roma Uli', 'Berjalan', '0:54:56', true],
-          ['1-May-2025', 'Fitri Rochimah', 'Senam', '0:31:33', true],
-          ['1-May-2025', 'Annisa Herta', 'Berjalan', '1:07:34', true],
-          ['1-May-2025', 'Dhany Aswin', 'Berjalan', '0:42:32', true],
-          ['2-May-2025', 'Hanin Dhiya', 'Berjalan', '0:38:01', true],
-          ['2-May-2025', 'Agus Riyanto', 'Bersepeda', '0:12:55', false],
-          ['2-May-2025', 'Dena Soekarno', 'Gym', '1:09:35', true],
-          ['2-May-2025', 'Fitri Rochimah', 'Voli', '0:36:18', true],
-          ['2-May-2025', 'Roma Uli', 'Berjalan', '0:49:37', true],
-          ['2-May-2025', 'Rita Kusmawati', 'Berjalan', '0:53:40', true],
-          ['2-May-2025', 'Parno', 'Berlari', '0:40:47', true],
-          ['2-May-2025', 'Afifah', 'Senam', '0:55:50', true],
-          ['2-May-2025', 'Annisa Herta', 'Senam', '0:45:48', true],
-          ['2-May-2025', 'Lia Yuliana', 'Senam', '0:24:21', false],
-          ['2-May-2025', 'Diana Suciati', 'Berjalan', '0:56:44', true],
-          ['2-May-2025', 'Rudhi Nurhandoyo', 'Berjalan', '0:36:50', true],
-          ['3-May-2025', 'Lia Yuliana', 'Berlari', '1:07:09', true],
-          ['3-May-2025', 'Redy Erdiyanto', 'Berenang', '0:08:16', false],
-          ['3-May-2025', 'Rita Kusmawati', 'Berjalan', '0:50:51', true],
-          ['3-May-2025', 'Yahya Djari', 'Berlari', '0:40:24', true],
-          ['3-May-2025', 'Yahya Djari', 'Bersepeda', '2:12:07', true],
-          ['3-May-2025', 'Fitri Rochimah', 'Berjalan', '0:47:33', true],
-          ['3-May-2025', 'Diana Suciati', 'Berjalan', '1:02:45', true],
-          ['3-May-2025', 'Iwa Mohamad W', 'Berjalan', '0:46:30', true],
-          ['3-May-2025', 'Rudhi Nurhandoyo', 'Berjalan', '0:51:52', true],
-          ['3-May-2025', 'Agus Riyanto', 'Bersepeda', '0:13:03', false],
-          ['4-May-2025', 'Hanin Dhiya', 'Berjalan', '0:31:06', true],
-          ['4-May-2025', 'Hanin Dhiya', 'Berlari', '0:29:02', false],
-          ['4-May-2025', 'Parno', 'Lari', '0:47:14', true],
-          ['4-May-2025', 'Rita Kusmawati', 'Berjalan', '0:36:25', true],
-          ['4-May-2025', 'Rudhi Nurhandoyo', 'Sepak Bola', '1:21:19', true],
-          ['4-May-2025', 'Dhany Aswin', 'Berlari', '0:59:43', true],
-          ['4-May-2025', 'Diana Suciati', 'Gym', '1:01:31', true],
-          ['4-May-2025', 'Amrullah', 'Berlari', '1:11:06', true],
-          ['4-May-2025', 'Dena Soekarno', 'Berjalan', '0:06:08', false],
-          ['4-May-2025', 'Dena Soekarno', 'Berlari', '0:34:08', true],
-          ['4-May-2025', 'Amrullah', 'Berlari', '2:59:13', true],
-          ['4-May-2025', 'Iwa Mohamad W', 'Berjalan', '0:43:02', true]
-          
         ]
       },
       week2: {
         aktivitas: "51 kegiatan", peserta: "24 orang", waktu: "70j 4m 14d",
         leaderboard: [
           ["Coming Soon", "Coming Soon", "Coming Soon"]
-        ],
-        report: [
-          ['5-May-2025', 'Dena Soekarno', 'Berlari', '0:35:19', true],
-          ['5-May-2025', 'Lia Yuliana ', 'Berjalan ', '0:05:52', false ],
-          ['5-May-2025', 'Rita Kusumawati', 'Berjalan ', '0:50:24', true ],
-          ['5-May-2025', 'Roma Uli ', 'Berjalan ', '0:50:00', true ],
-          ['5-May-2025', 'Yahya Djari', 'Berlari ', '0:46:19', true ],
-          ['5-May-2025', 'Lia Yuliana ', 'Berolahraga', '1:00:59', true ],
-          ['5-May-2025', 'Annisa Herta ', 'Berjalan ', '0:52:42', true ],
-          ['5-May-2025', 'Hanin Dhiya', 'Berjalan ', '0:34:51', true ],
-          ['6-May-2025', 'Rudhi Nurhandoyo', 'Berjalan ', '0:42:56', true ],
-          ['6-May-2025', 'Salmon', 'Berjalan ', '4:52:46', true ],
-          ['6-May-2025', 'Agra Illahi', 'Berjalan ', '0:25:35', false ],
-          ['6-May-2025', 'Dhany Aswin', 'Berjalan ', '0:25:28', false ],
-          ['6-May-2025', 'Annisa Herta ', 'Senam', '0:42:50', true ],
-          ['6-May-2025', 'Fitri Rochimah', 'Senam', '0:43:15', true ],
-          ['6-May-2025', 'Iwa', 'Berjalan ', '0:40:21', true ],
-          ['6-May-2025', 'Arif Hermawan ', 'Bersepeda', '2:16:38', true ],
-          ['6-May-2025', 'Rendhie Bihaqqi', 'Berjalan ', '0:41:41', true ],
-          ['6-May-2025', 'Diana Suciati', 'Gym', '13:49:00', false ],
-          ['6-May-2025', 'Yahya Djari', 'Bersepeda', '0:56:42', true ],
-          ['7-May-2025', 'Yahya Djari', 'Berlari', '0:52:12', true ],
-          ['7-May-2025', 'Hanin Dhiya', 'Berolahraga', '0:01:18', false ],
-          ['7-May-2025', 'Hanin Dhiya', 'Berjalan ', '0:08:28', false ],
-          ['7-May-2025', 'Fitri Rochimah', 'Berjalan ', '0:18:18', false ],
-          ['7-May-2025', 'Rita Kusumawati', 'Berjalan ', '0:37:08', true ],
-          ['7-May-2025', 'Dhany Aswin', 'Berolahraga', '0:45:12', true],
-          ['7-May-2025', 'Sulis Tiana', 'Berolahraga', '0:50:56', true],
-          ['7-May-2025', 'Amrullah', 'Berolahraga', '0:47:55', true],
-          ['7-May-2025', 'Yahya Djari', 'Berolahraga', '0:25:12', false ],
-          ['7-May-2025', 'Kusnadi ', 'Berolahraga', '0:54:37', true],
-          ['7-May-2025', 'Agra Illahi', 'Berolahraga', '0:40:18', true ],
-          ['7-May-2025', 'Hanin Dhiya', 'Berolahraga', '0:40:11', true ],
-          ['7-May-2025', 'Iwa', 'Berolahraga', '0:41:05', true],
-          ['7-May-2025', 'Juna Edi', 'Volley', '0:22:10', false ],
-          ['7-May-2025', 'Redy Erdianto', 'Berolahraga', '0:28:06', false ],
-          ['7-May-2025', 'Annisa Herta ', 'Berolahraga', '01:09:00', true],
-          ['7-May-2025', 'Fitri Rochimah', 'Berolahraga', '0:50:23', true],
-          ['7-May-2025', 'Roma Uli ', 'Berolahraga', '0:47:26', true],
-          ['7-May-2025', 'Diana Suciati', 'gym', '15:39:00', false ],
-          ['8-May-2025', 'Rudhi Nurhandoyo', 'Berjalan ', '0:40:41', true],
-          ['8-May-2025', 'Hanin Dhiya', 'Berjalan ', '0:12:44', false ],
-          ['8-May-2025', 'Iwa', 'Berjalan ', '0:50:59', true],
-          ['9-May-2025', 'Rudhi Nurhandoyo', 'Berjalan ', '0:40:14', true],
-          ['9-May-2025', 'Diana Suciati', 'Berjalan ', '1:05:00', true],
-          ['9-May-2025', 'Lia Yuliana ', 'Berjalan ', '0:59:47', true ],
-          ['9-May-2025', 'Yahya Djari', 'Berlari', '1:07:00', true],
-          ['9-May-2025', 'Annisa Herta ', 'Senam', '0:55:53', true],
-          ['9-May-2025', 'Redy Erdianto', 'Pilates', '0:44:44', true],
-          ['9-May-2025', 'Fitri Rochimah', 'Senam', '1:07:00', true],
-          ['9-May-2025', 'Early Melati Daliilah', 'Senam', '0:55:53', true],
-          ['9-May-2025', 'Afifah Dewi', 'Senam', '0:55:53', true],
-          ['9-May-2025', 'Nafashinta ', 'Senam', '0:55:53', true]
         ]
+        
       },
       week3: {
         aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
         leaderboard: [
           ["Coming Soon", "Coming Soon", "Coming Soon"]
-        ],
-        report: [
-          ['12-May-2025', 'Yahya Djari', 'Berlari', '0:59:36', true],
-          ['12-May-2025', 'Iwa Mohamad W', 'Berjalan', '0:44:10', true],
-          ['12-May-2025', 'Yahya Djari', 'Berjalan', '0:23:03', false],
-          ['12-May-2025', 'Rudhi Nurhandoyo', 'Berjalan', '0:53:41', true],
-          ['12-May-2025', 'Redy Erdiyanto', 'Berlari', '0:21:11', false],
-          ['12-May-2025', 'Arif Hermawan', 'Berjalan', '1:16:20', true],
-          ['12-May-2025', 'Fitri Rochimah', 'Berjalan', '0:25:40', false],
-          ['12-May-2025', 'Diana Suciati', 'Tenis Meja', '1:31:19', true],
-          ['13-May-2025', 'Rita Kusmawati', 'Berjalan', '0:42:10', true],
-          ['13-May-2025', 'Iwa Mohamad W', 'Berjalan', '0:47:49', true],
-          ['13-May-2025', 'Nasya Annindya Kamelin', 'Berjalan', '0:53:22', true],
-          ['13-May-2025', 'Rudhi Nurhandoyo', 'Berjalan', '1:02:37', true],
-          ['13-May-2025', 'Arif Hermawan', 'Bersepeda', '1:23:58', true],
-          ['13-May-2025', 'Yahya Djari', 'Sepeda', '1:31:57', true],
-          ['13-May-2025', 'Rendhie Bihaqi', 'Berjalan', '2:16:54', true],
-          ['13-May-2025', 'Yahya Djari', 'Berlari', '0:53:33', true],
-          ['13-May-2025', 'Diana Suciati', 'Gym', '0:51:29', true],
-          ['13-May-2025', 'Lia Yuliana', 'Olahraga', '1:00:54', true]
-      ]
+        ]
     },
-      
+    week4: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week5: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week6: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week7: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week8: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week9: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
+    week10: {
+        aktivitas: "18 kegiatan", peserta: "11 orang", waktu: "17j 59m 43d",
+        leaderboard: [
+          ["Coming Soon", "Coming Soon", "Coming Soon"]
+        ]
+    },
+
     };
 
     
