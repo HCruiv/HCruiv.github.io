@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HACE Landing Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)), url('image.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
 
   <!-- Hero Section -->
-  <section class="bg-white py-16 shadow">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold text-blue-700">Welcome to <span class="text-orange-500">HACE</span></h1>
-      <p class="mt-4 text-lg text-gray-600">Explore projects developed by Human Capital.</p>
+  <section class="hero-bg py-20 shadow text-center text-white">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold drop-shadow-lg">Welcome to <span class="text-orange-400">HACE</span></h1>
+      <p class="mt-4 text-lg drop-shadow-md">Explore projects developed by Human Capital.</p>
     </div>
   </section>
 
@@ -43,23 +51,21 @@
           <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Open</button>
         </div>
 
-        <!-- Tambah card lain di sini sesuai kebutuhan -->
-
-        <!-- Card 1 -->
+        <!-- Card 4 -->
         <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-blue-600">KP & Penelitian</h3>
           <p class="text-gray-600 mt-2 text-sm">A platform for undergraduate students to apply for internships and research projects, track application status, and manage required documentation.</p>
           <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Open</button>
         </div>
 
-        <!-- Card 2 -->
+        <!-- Card 5 -->
         <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-blue-600">Overtimes</h3>
           <p class="text-gray-600 mt-2 text-sm">A system to manage overtime submissions, approvals, and monitoring across all departments.</p>
           <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Open</button>
         </div>
 
-        <!-- Card 3 -->
+        <!-- Card 6 -->
         <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <h3 class="text-xl font-semibold text-blue-600">HC U Fit</h3>
           <p class="text-gray-600 mt-2 text-sm">Stay fit, stay strong! HC U Fit empowers employees to lead healthier lives through independent and group exercise sessions.</p>
