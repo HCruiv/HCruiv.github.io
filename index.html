@@ -81,5 +81,23 @@
     by sulis tiana
   </footer>
 
+  <script>
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+Shift+C
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key)) ||
+      (e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
+
 </body>
 </html>
